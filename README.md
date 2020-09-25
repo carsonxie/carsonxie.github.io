@@ -1,37 +1,89 @@
-## Welcome to GitHub Pages
+# jekyll-rtd-theme v2
 
-You can use the [editor on GitHub](https://github.com/carsonxie/carsonxie.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+![CI](https://github.com/rundocs/jekyll-rtd-theme/workflows/CI/badge.svg?branch=v2)
+![jsDelivr](https://data.jsdelivr.com/v1/package/gh/rundocs/jekyll-rtd-theme/badge)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Opinionated github flavored standard document theme for open source projects, with few options, but everything!
 
-### Markdown
+## What it does?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+This theme(`v2`) is inspired by [sphinx-rtd-theme](https://github.com/readthedocs/sphinx_rtd_theme) and refactored with:
 
-```markdown
-Syntax highlighted code block
+- [github-pages](https://github.com/github/pages-gem)
+- [@primer/css](https://github.com/primer/css)
 
-# Header 1
-## Header 2
-### Header 3
+Give you a native GitHub experience and solved the issue of open source project documentation site
 
-- Bulleted
-- List
+- No need to learn other programming languages for building documentation
+- No need to care about the site SEO
+- Markdown syntax extended
+- Native support for mermaid chart plugin
 
-1. Numbered
-2. List
+## Quick start
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```yml
+remote_theme: rundocs/jekyll-rtd-theme
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+You can [generate](https://github.com/rundocs/starter-slim/generate) with the same files and folders from [rundocs/starter-slim](https://github.com/rundocs/starter-slim/)
 
-### Jekyll Themes
+## Options
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/carsonxie/carsonxie.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```yml
+title: Your awesome title
+lang: # default: en
+description: Write an awesome description for your new site here
 
-### Support or Contact
+readme_index:
+  with_frontmatter: true
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## optional settings ##
+meta:
+  key1: value1
+  key2: value2
+
+google:
+  gtag:
+  adsense:
+
+mermaid:
+  custom: # mermaid link
+  initialize: # mermaid options, default: {}
+
+# also available via file: _include/assets/custom.scss
+scss:
+
+# also available via file: _include/assets/custom.js
+script:
+
+# also available via file: _data/translate.yml
+translate:
+  # shortcodes
+  danger:
+  note:
+  tip:
+  warning:
+  # 404
+  not_found:
+  # search
+  searching:
+  search:
+  search_docs:
+  search_results:
+  search_results_found: # the "#" in this translate will replaced with results size!
+  search_results_not_found:
+
+## optional plugins ##
+plugins:
+  - jemoji
+  - jekyll-avatar
+  - jekyll-mentions
+```
+
+## Writing
+
+Document writing specifications, please refer to [rundocs.io](https://rundocs.io) for details
+
+## The license
+
+The theme is available as open source under the terms of the MIT License
