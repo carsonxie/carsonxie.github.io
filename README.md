@@ -1,5 +1,6 @@
 # jekyll-rtd-theme v2
 
+<<<<<<< HEAD
 ![CI](https://github.com/rundocs/jekyll-rtd-theme/workflows/CI/badge.svg?branch=v2)
 ![jsDelivr](https://data.jsdelivr.com/v1/package/gh/rundocs/jekyll-rtd-theme/badge)
 
@@ -87,3 +88,17 @@ Document writing specifications, please refer to [rundocs.io](https://rundocs.io
 ## The license
 
 The theme is available as open source under the terms of the MIT License
+=======
+### Tableau Study Notes
+* Item 1
+* Item 2
+
+---- 
+
+
+### Random 
+* [Process XML and JSON file]()
+
+
+----
+>>>>>>> 149000e3c4a4ee12c979df0d67b639f083245423
